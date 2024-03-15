@@ -1,0 +1,48 @@
+.todo-item {
+  background: #ffffff;
+  border-bottom: 1px solid #ededed;
+  color: rgb(77, 77, 77);
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  padding-right: 16px;
+  height: 70px;
+  width: 100%;
+  position: relative;
+}
+.todo-item:hover .todo-item__remove__edite {
+  opacity: 1;
+}
+.todo-item__complete {
+  position: absolute;
+  display: flex;
+  left: 10px;
+}
+.todo-item__text {
+  line-height: 40px;
+  padding-left: 60px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  transition: color 0.2s linear;
+}
+@media screen and (max-width: 475px) {
+  .todo-item__text {
+    font-size: 16px;
+  }
+}
+.todo-item__text--completed {
+  color: #cdcdcd;
+  text-decoration: line-through;
+}
+.todo-item__remove__edite {
+  color: #cdcdcd;
+  cursor: pointer;
+  margin-left: auto;
+  opacity: 0;
+}
+.todo-item__remove__edite:hover {
+  color: rgba(175, 47, 47, 0.3);
+}
+
+/*# sourceMappingURL=todo-item.css.map */

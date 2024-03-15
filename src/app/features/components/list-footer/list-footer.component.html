@@ -1,0 +1,17 @@
+<div class="list-footer">
+  <div class="uncompleted">
+    {{ uncompletedTodos }}
+    {{ uncompletedTodos === 1 || !uncompletedTodos ? "item" : "items" }}
+  </div>
+  <mat-list class="filter">
+    <ng-container *ngFor="let filter of filterCategories(); let i = index">
+      <mat-list-item
+        class="filter__item"
+        [class.filter__item--active]="activeFilter() === filter"
+        (click)="setFilter(i)"
+      >
+        {{ filter }}
+      </mat-list-item>
+    </ng-container>
+  </mat-list>
+</div>

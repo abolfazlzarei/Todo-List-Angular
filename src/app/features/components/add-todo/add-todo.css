@@ -1,0 +1,64 @@
+.control {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.control .mat-mdc-checkbox {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+@media screen and (max-width: 992px) {
+  .control .mat-mdc-checkbox {
+    top: 15px;
+    transform: translateY(0);
+  }
+}
+.control .complete-all {
+  cursor: pointer;
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.control .complete-all svg {
+  max-width: 30px;
+  max-height: 30px;
+}
+.control input[type=text] {
+  background: #ffffff;
+  border: rgb(77, 77, 77);
+  color: rgb(77, 77, 77);
+  font-size: 24px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  height: 70px;
+  width: 100%;
+  padding: 16px 16px 16px 60px;
+  outline: none;
+}
+@media screen and (max-width: 475px) {
+  .control input[type=text] {
+    font-size: 16px;
+  }
+}
+.control input[type=text]::placeholder {
+  color: rgba(169, 169, 169, 0.4);
+  font-style: italic;
+  letter-spacing: 1.5px;
+}
+@media screen and (max-width: 475px) {
+  .control input[type=text]::placeholder {
+    font-size: 16px;
+  }
+}
+.control button {
+  display: none;
+}
+@media screen and (max-width: 992px) {
+  .control button {
+    display: block;
+  }
+}
+
+/*# sourceMappingURL=add-todo.css.map */
